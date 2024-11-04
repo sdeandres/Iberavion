@@ -32,8 +32,8 @@
   <link rel="stylesheet" href="./css/bootstrap/iberavion-bootstrap-25.css" />
   <link rel="stylesheet" href="./css/iberavion-styles25.css" />
   <link rel="stylesheet" href="./css/header-menu25.css" />
-  
-  <!-- SLIDER --> 
+
+  <!-- SLIDER -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="./css/slider/slider-custom25.css">
 
@@ -53,77 +53,89 @@ var numDeep = 0;
       });
     });
   </script>
-  <!-- 
-  <header>
-    <div id="capaHeader3">
-      <div id="capamenu2">
-        <img alt="Ir a página de inicio" onclick="goIndex(numDeep)" src="./img/cabecera.png" style="cursor: pointer" />
-
-
-      </div>
-      
-    </div>
-  </header>
- -->
 
 
 
+<!-- HEADER INI ****************************************** -->
   <header>
     <div class="myheader">
-
       <div class="mylogoHeader" id="mylogoHeader">
         <img src="./img/logos24/logo_iberavion300.png" />
         <img src="./img/logos24/banner-texto-veteranos.png" id="textoVeteranos" />
       </div>
-
       <div>
         <script src="./js/menu_iberavion25.js" type="text/javascript"></script>
       </div>
     </div>
-
   </header>
-
-
-
-
-
-
   <div id="prineralinea"></div>
+<!-- HEADER FIN ****************************************** -->
+
 
 
   <main>
 
+    <div class="container-lg">
 
 
 
+<!--#################################  CARUSEL #################################  -->
+      <div class="main-carousel"
+      data-flickity='{ "cellAlign": "left", "contain": true , "pageDots": false , "autoPlay": true, "freeScroll": true, "wrapAround": true}'>
 
-    <div class="container-lg sad_azure">
-
-
-
-      <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "autoPlay": true}'>
-
-        <div class="carousel-cell">
-          <img alt="x" src="html/viajes/img_viajes_inter/2024/202411_Tailandia.jpg" />
-        </div>
+        <!-- carousel-cell ################### -->
         <div class="carousel-cell">
 
-          <img src="img/logos24/logo_iberavion300.png" class="logo_iberavion300" />
-
+            <div class="carrusel-card fade-in-element">
+              <div class="card-imagen ">
+                  <img alt="x" src="html/viajes/img_viajes_inter/2024/202411_Tailandia.jpg" />
+              </div>
+              <div class="card-texto">
+                <p>
+                Revive uno de los eventos más impactantes del siglo XX y sumérgete en la fascinante historia del Titanic. Una experiencia inmersiva única que te permitirá recorrer los camarotes de primera y tercera clase, escuchar la orquesta en su última canción mientras el banco se hundía y explorar las profundidades del Atlántico hasta encontrar el naufragio
+              </p>
+              </div>
+          </div>
 
         </div>
-        <div class="carousel-cell">
+        <!-- carousel-cell ################### -->
 
-          <img src="img/logos24/logo_iberavion300.png" class="logo_iberavion300" />
+         <!-- carousel-cell ################### -->
+         <div class="carousel-cell">
 
-
+          <div class="carrusel-card fade-in-element">
+            <div class="card-imagen ">
+                <img alt="x" src="html/viajes/img_viajes_inter/2024/202404_Auvernia.webp" />
+            </div>
+            <div class="card-texto">
+              <p>
+              Revive uno de los eventos más impactantes del siglo XX y sumérgete en la fo
+            </p>
+            </div>
         </div>
+
       </div>
+      <!-- carousel-cell ################### -->
+
+
+        <!-- <div class="carousel-cell">
+          <img src="img/logos24/logo_iberavion300.png" class="logo_iberavion300" />
+        </div> -->
+        
+        </div>
+      
+<!--#################################  CARUSEL #################################  -->
+
+
+
+
 
 
 
       <hr style="margin-top: 5%;">
 
+
+      <!--#################################  GALLERY #################################  -->
       <div class="divNews" onmouseout="this.className='divNews'" onmouseover="this.className='divNewsOver'">
 
         <div class="newsTitle">
@@ -133,7 +145,7 @@ var numDeep = 0;
 
         <p>Esta es nuestra oferta para 2025, todos los viajes son sin sorteos</p>
         </div>
-        
+
 
       <div class="gallery">
 
@@ -341,14 +353,15 @@ var numDeep = 0;
   </script>
 
 
-<!-- JavaScript --> 
+<!-- JavaScript -->
   <script src="./js/iberavion25.js" type="text/javascript"></script>
-  <script src="./js/cookies25.js" type="text/javascript"></script>  
+  <script src="./js/cookies25.js" type="text/javascript"></script>
   <script src="./js/jquery/jquery-latest.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/bootstrap/iberavion-bootstrap25.js" type="text/javascript"></script>
-  <!-- SLIDER-->  
+  <!-- SLIDER-->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
 
   <script type="text/javascript">
     var loc = window.location.href + "";
