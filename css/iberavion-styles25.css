@@ -1,0 +1,31 @@
+.mylogoHeader {
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background: linear-gradient(to top, rgb(243, 241, 241), rgba(0, 0, 0, 0.6)), url("../img/logos24/header-background.jpg");*/
+  background-image: linear-gradient(transparent 30%, white 100%),
+    url("../img/logos24/header-background.jpg");
+
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  align-content: center;
+  text-align: center;
+  margin-right: -5%;
+}
+
+.mylogoHeader #texto-veteranos {
+  height: 100px;
+}
+
+.mylogoHeader img {
+  display: inline-block;
+  max-width: 100%;
+  width: auto;
+  max-height: 110px;
+  object-fit: contain; /* O cover, según tus necesidades */
+}
+
+
+.roundCorner {
+  border-radius: 10px; /* Redondea las 4 esquinas en 10 píxeles */
+}
