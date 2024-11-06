@@ -1433,10 +1433,11 @@ ul.breadcrumb li a:hover {
   cursor: pointer; 
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
+
+  margin-bottom: 50px;
 }
 
-
-.divNewsOver {
+.divNews:hover {
   padding: 10px;
   width: 100%;
   background-color: rgb(220, 224, 230);
@@ -1459,3 +1460,38 @@ ul.breadcrumb li a:hover {
 .newsTitle h2 {
   font-size: x-large;
 }
+
+
+
+.contenedorGrid {
+  
+  display: grid;
+  
+  grid-template-columns: 1.5fr 2.5fr;  
+  /* Creamos dos columnas de igual ancho */
+  grid-column-gap: 20px; /* Espacio de 20px entre columnas */
+
+  /* Puedes ajustar los anchos según tus necesidades, por ejemplo:
+  grid-template-columns: 300px 200px; */
+}
+
+.gridLogo {
+  padding: 10px;
+}
+
+.gridLogo img {
+  width: 100%;
+  height: auto;
+}
+
+.gridTexto {
+  padding: 10px;
+  text-align: justify;
+}
+
+.gridTexto p {
+  line-height: 1.6em;
+}
+
+
+

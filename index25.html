@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/cookies25.css" />
   <link rel="stylesheet" href="./css/iberavion25.css" />
+  <link rel="stylesheet" href="./css/iberavion-mobile.css" />
   <link rel="stylesheet" href="./css/bootstrap/iberavion-bootstrap-25.css" />
   <link rel="stylesheet" href="./css/iberavion-styles25.css" />
   <link rel="stylesheet" href="./css/header-menu25.css" />
@@ -81,41 +82,58 @@ var numDeep = 0;
 
 <!--#################################  CARUSEL #################################  -->
       <div class="main-carousel"
-      data-flickity='{ "cellAlign": "left", "contain": true , "pageDots": false , "autoPlay": true, "freeScroll": true, "wrapAround": true}'>
+      data-flickity='{ "cellAlign": "left", "contain": true , "pageDots": true , "autoPlay": true, "freeScroll": true}'>
+      <!-- data-flickity='{ "cellAlign": "left", "contain": true , "pageDots": false , "autoPlay": true, "freeScroll": true, "wrapAround": true}'> -->
+
+      <!-- carousel-cell ################### -->
+      <div class="carousel-cell">
+          <div class="card-foto">
+            <img alt="x" src="./img/slider/2024/202411_Teatro.png" />
+        </div>
+
+        <div class="card-texto card_texto_white roundCorner">
+          <h3>NUEVO VIAJE</h3>
+          <p>
+            HOSPITALITAS - LAS EDADES DEL HOMBRE EN GALICIA
+        </p>
+        <p><granate>
+          Del 14 al 17 de Noviembre de 2024
+        </granate>
+        </p>
+          </div>  
+    </div>
+    <!-- carousel-cell ################### -->
+
 
         <!-- carousel-cell ################### -->
         <div class="carousel-cell">
+              <div class="card-imagen-full">
+                  <img alt="x" src="html/viajes/img_viajes_inter/2025/202501_Algarve_2.webp" />
+              </div>
 
-            <div class="carrusel-card fade-in-element">
-              <div class="card-imagen ">
-                  <img alt="x" src="html/viajes/img_viajes_inter/2024/202411_Tailandia.jpg" />
-              </div>
-              <div class="card-texto">
-                <p>
-                Revive uno de los eventos más impactantes del siglo XX y sumérgete en la fascinante historia del Titanic. Una experiencia inmersiva única que te permitirá recorrer los camarotes de primera y tercera clase, escuchar la orquesta en su última canción mientras el banco se hundía y explorar las profundidades del Atlántico hasta encontrar el naufragio
-              </p>
-              </div>
-          </div>
+              <div class="card-texto roundCorner">
+                <p>ESTO ES UNA PRUEBA ALGARVE </p>
+                </div>           
 
         </div>
         <!-- carousel-cell ################### -->
 
          <!-- carousel-cell ################### -->
          <div class="carousel-cell">
+          <div class="card-imagen-full">
+              <img alt="x" src="html/viajes/img_viajes_inter/2025/toscana.jpg" />
+          </div>
 
-          <div class="carrusel-card fade-in-element">
-            <div class="card-imagen ">
-                <img alt="x" src="html/viajes/img_viajes_inter/2024/202404_Auvernia.webp" />
-            </div>
-            <div class="card-texto">
-              <p>
-              Revive uno de los eventos más impactantes del siglo XX y sumérgete en la fo
-            </p>
-            </div>
-        </div>
+          <div class="card-texto roundCorner">
+            ESTO ES UNA PRUEBA TOSCANA
+            </div>           
 
-      </div>
-      <!-- carousel-cell ################### -->
+    </div>
+    <!-- carousel-cell ################### -->
+
+         
+
+    
 
 
         <!-- <div class="carousel-cell">
@@ -132,11 +150,12 @@ var numDeep = 0;
 
 
 
-      <hr style="margin-top: 5%;">
+      <!-- <hr style="margin-top: 5%;"> -->
+      
 
 
       <!--#################################  GALLERY #################################  -->
-      <div class="divNews" onmouseout="this.className='divNews'" onmouseover="this.className='divNewsOver'">
+      <div class="divNews">
 
         <div class="newsTitle">
         <h2 >
@@ -195,36 +214,17 @@ var numDeep = 0;
 
 
 
-      <div class="pNews1" style="display: block">
+          <div class="divNews contenedorGrid">
+            <div class="gridLogo">
 
-
-
-
-
-        <table width="100%">
-          <tr>
-            <td colspan="2" style="vertical-align: middle; padding-left: 15px">
-              <!-- <h1 style="text-transform: uppercase">
-              ASAMBLEA GENERAL 2023
-            </h1> -->
-            </td>
-          </tr>
-          <tr>
-            <td style="text-align: center">
-              <div class="divImgLogo">
-                <img alt="x" class="imgArtSinBorde" src="./img/logos2/logo_iberavion300.png" />
+                <img alt="x"  src="./html/viajes/img_viajes_inter/2024/202406_IslasGriegas.jpg" />
               </div>
 
-              <div class="salto">
-                <p style="
-            font-size: 15px;
-            text-align: center;
-            margin-top:0 ;
-          ">
+              <div class="gridTexto">
                 <h1>ASAMBLEA GENERAL 2024</h1>
-                <!-- <h1>Madrid, 31 Mayo 2023</h1>
+                <h1>Madrid, 31 Mayo 2023</h1>
               </p>
-              <p style="line-height: 1.6em; text-align: center">
+              <p >
                 Por acuerdo de la Junta Directiva y en cumplimineto de lo dispuesto en los Estatutos de
                 la
                 Asociación de Veteranos de Iberia y Profesionales del Sector Aéreo, se convoca a
@@ -234,7 +234,7 @@ var numDeep = 0;
                 C/Fuencarral
                 121 - 6a planta, a las 10:30 h. en primera convocatoria y a las 11:00 h. en segunda
                 convocatoria.
-              </p> -->
+              </p> 
 
                 <p style="line-height: 1.6em; text-align: center">
                   <a class="verPDF" href="./html/secretaria/2024/MEMORIA_DE_ACTIVIDADES_ 2023.pdf"
@@ -246,9 +246,7 @@ var numDeep = 0;
 
                 </p>
               </div>
-            </td>
-          </tr>
-        </table>
+            
       </div>
 
       <!--############################################################################################################-->
@@ -305,6 +303,9 @@ var numDeep = 0;
     </div>
 
 
+    <span style="height: 300px;">&nbsp; 
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+    </span>
   </main>
 
 

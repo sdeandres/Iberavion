@@ -1,0 +1,26 @@
+@media (max-width: 460px) {
+
+
+
+    .contenedorGrid {
+        background-color: azure;
+        display: grid;
+        grid-template-columns: 1fr ;  
+        /* Creamos dos columnas de igual ancho */
+      
+      grid-row-gap: 10px;
+        /* Puedes ajustar los anchos según tus necesidades, por ejemplo:
+        grid-template-columns: 300px 200px; */
+      }
+
+
+      .gridLogo {
+        text-align: center;
+        padding: 10px;        
+      }
+      
+      .gridTexto {
+        text-align: center;
+        padding: 10px;
+      }
+}
