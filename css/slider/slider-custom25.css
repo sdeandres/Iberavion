@@ -2,33 +2,30 @@
 https://flickity.metafizzy.co/
 */
 
-.main-carousel{
-  border: 1px solid lightgray;
-  /* background-color: azure; */
-
-  margin-bottom: 50px;
+.main-carousel {
+  /* border: 1px solid lightgray; */
+  border: 1px solid #aa4747;
+  background-color: #fff;  
 }
 
 .carousel-cell {
-   display: flex;
+  display: flex;
 
   text-align: center;
 
-  width: 100%; 
+  width: 100%;
   /* full width */
   height: 400px; /* height of carousel */
   /* margin-right: 10px; */
   margin: 0 auto;
   border: 0px solid green;
   text-align: center;
-/*  height: 400px;*/
+  /*  height: 400px;*/
   object-fit: none; /* Hace que la imagen llene todo el contenedor */
-
 }
 
-
 .card-texto {
-  /* Estilos para el contenido */  
+  /* Estilos para el contenido */
   position: absolute;
   top: 45%;
   width: 35%;
@@ -37,79 +34,76 @@ https://flickity.metafizzy.co/
   padding: 15px;
   line-height: 150%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-
-.card-texto p {
-  /* Estilos para el contenido */  
-  text-align: center;
-  font-size:large;
-  
 }
 
+.card-texto p {
+  /* Estilos para el contenido */
+  text-align: center;
+  font-size: large;
+}
 
-.card-imagen-full {  
-   width: 100%;   
-    object-fit: none;  
-    }
+.card-imagen-full {
+  width: 100%;
+  object-fit: none;
+}
 
+.card-imagen-full img {
+}
 
- .card-foto {
+.card-foto {
   position: absolute;
   top: 1%;
   margin-bottom: 10px;
   margin-left: 60%;
   background-color: rgba(245, 245, 220, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
- }
-
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .fade-in-element {
   opacity: 0;
-  animation: fadeIn 5s ease-out infinite;  
+  animation: fadeIn 5s ease-out infinite;
 }
-
 
 /* ----- Page dots ----- */
 
 /* position dots in carousel */
 .flickity-page-dots {
-  bottom: -20px;
+  bottom: 15px;
 }
 /* white circles */
 .flickity-page-dots .dot {
   width: 12px;
   height: 12px;
   opacity: 1;
-  background: lightblue;
-  border: 0px solid rgb(10, 10, 10);
+  /* background: lightblue; */
+  background: #e0e0e0;
+  border: 1px solid rgb(218, 217, 217);
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
-  background: darkred
+  background: darkred;
 }
 
-
-
-
- 
 /* ################################################ */
 
 @media (max-width: 460px) {
-  .card-imagen img {  
+  .card-imagen img {
     width: 600px;
     height: 600px;
     object-fit: cover; /* Hace que la imagen llene todo el contenedor */
   }
 
   .card-texto {
-    /* Estilos para el contenido */  
+    /* Estilos para el contenido */
     position: absolute;
     top: 35%;
     width: 60%;
@@ -118,49 +112,44 @@ https://flickity.metafizzy.co/
     padding: 15px;
     line-height: 150%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
+  }
 
-    .card_texto_white {
-      /* Estilos para el contenido */  
-      position: absolute;
-      top: 35%;
-      width: 60%;
-      margin-left: 20%;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 10px;
-      line-height: 150%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      font-size: medium;
-      }
+  .card_texto_white {
+    /* Estilos para el contenido */
+    position: absolute;
+    top: 35%;
+    width: 60%;
+    margin-left: 20%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    line-height: 150%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: medium;
+  }
 
-    
- .card-foto {
-  display: inline-block;
-  top: 1%;
-  margin: 0 auto;
-  width: 100%;
-  
-  background-color: rgba(245, 245, 220, 0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  .card-foto {
+    display: inline-block;
+    top: 1%;
+    margin: 0 auto;
+    width: 100%;
 
- }
-
+    background-color: rgba(245, 245, 220, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
   /* position dots in carousel */
   .flickity-page-dots {
-    bottom: -12px;
+    bottom: 12px;
   }
   /* white circles */
   .flickity-page-dots .dot {
-    width: 8px;
-    height: 8px;
-    
+    width: 10px;
+    height: 10px;
   }
   /* fill-in selected dot */
   .flickity-page-dots .dot.is-selected {
-    background: darkred
+    background: darkred;
   }
-
 }
 
 /* ################################################ */

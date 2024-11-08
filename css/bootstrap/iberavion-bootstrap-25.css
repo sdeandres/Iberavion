@@ -77,6 +77,12 @@ main>.container {
 	margin: 5px;
 }
 
+.card__img .imgArt400 {
+	max-width: 300px;
+	/*ANCHO DE TU IMAGEN*/
+	border: 1px solid #900;
+	margin: 5px;
+}
 
 .imgArt200 {
 

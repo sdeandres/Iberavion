@@ -1,26 +1,36 @@
 @media (max-width: 460px) {
+  /* SALTO AL SIGUIENTE ELEMENTO */
+  .main-carousel,
+  .divNews-gray,
+  .divNews {
+    margin-bottom: 20px;
+  }
 
+  .contenedorGrid {
+    /*background-color: azure;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Creamos dos columnas de igual ancho */
 
-
-    .contenedorGrid {
-        background-color: azure;
-        display: grid;
-        grid-template-columns: 1fr ;  
-        /* Creamos dos columnas de igual ancho */
-      
-      grid-row-gap: 10px;
-        /* Puedes ajustar los anchos según tus necesidades, por ejemplo:
+    grid-row-gap: 10px;
+    /* Puedes ajustar los anchos según tus necesidades, por ejemplo:
         grid-template-columns: 300px 200px; */
-      }
+  }
 
+  .gridLogo {
+    text-align: center;
+    padding: 10px;
+  }
 
-      .gridLogo {
-        text-align: center;
-        padding: 10px;        
-      }
-      
-      .gridTexto {
-        text-align: center;
-        padding: 10px;
-      }
+  .gridTexto {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .gridTexto img {
+    width: 70%;
+  }
+  .my-custom-container {
+    width: 95%;
+  }
 }

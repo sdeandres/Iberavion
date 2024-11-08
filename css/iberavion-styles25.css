@@ -25,7 +25,3 @@
   object-fit: contain; /* O cover, según tus necesidades */
 }
 
-
-.roundCorner {
-  border-radius: 10px; /* Redondea las 4 esquinas en 10 píxeles */
-}

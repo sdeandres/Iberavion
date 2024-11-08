@@ -1,5 +1,7 @@
 ﻿/*
-SENCHA
+border: 1px solid rgb(170, 71, 71); --> AA4747 ROJO GRANATE BORDE divNews
+
+
 VERDE: #93CA47
 AZUL: #074F79
 AZUL LETRA: #126499
@@ -83,8 +85,9 @@ td {
 body {
   line-height: 1;
   color: #434343;
-  /*	background:#EDEDED;*/
+  background: #ededed;
   color: #000;
+
   font: 14px sans-serif, Tahoma, Arial, Helvetica;
   margin: 0;
   min-height: 100vh;
@@ -117,7 +120,14 @@ h1 {
   font-size: 30px;
 }
 h2 {
-  font: 13px sans-serif;
+  font: 18px sans-serif;
+  color: #074f79;
+  display: block;
+  font-weight: bold;
+  padding: 2px 0 5px 0;
+}
+h3 {
+  font: 16px sans-serif;
   color: #074f79;
   display: block;
   font-weight: bold;
@@ -147,13 +157,7 @@ h4 {
   padding: 2px 0 5px 0;
   cursor: pointer;
 }
-h3 {
-  font: 14px sans-serif;
-  color: #126499;
-  display: block;
-  font-weight: bold;
-  padding: 2px 0 5px 0;
-}
+
 p {
   margin-top: 10px;
   /*line-height:16px;*/
@@ -1373,8 +1377,8 @@ ul.breadcrumb li a:hover {
   grid-auto-rows: 19rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
-  
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  margin: 0px 10px 10px 10px;
 }
 
 .card {
@@ -1387,18 +1391,18 @@ ul.breadcrumb li a:hover {
   color: #333;
 }
 
+.card:hover {
+  background-color: rgb(220, 224, 230);
+}
+
 .card__img {
   text-align: center;
 }
-
-
 
 .card__img img {
   border-radius: 0.3rem;
   border-color: grey;
 }
-
-
 
 .card h4 {
   text-align: center;
@@ -1409,65 +1413,60 @@ ul.breadcrumb li a:hover {
 .card_title h3 {
   text-align: center;
   margin: auto;
-  margin: 3px auto;  
+  margin: 3px auto;
 }
 
 .card_title h2 {
   text-align: center;
   margin: 3px auto;
-  
 }
 .card_title p {
   text-align: center;
   margin: auto;
-  
 }
-
 
 .divNews {
   padding: 10px;
   width: 100%;
-  background-color: #FFF;
-  border: 1px solid lightgray;
+  background-color: #fff;
+  /* border: 1px solid lightgray; */
+  border: 1px solid #aa4747;
   text-align: justify;
-  cursor: pointer; 
+  cursor: pointer;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
+}
 
-  margin-bottom: 50px;
+.divNews-gray {
+  padding: 10px;
+  width: 100%;
+  /* background-color:#eceaea;  */
+  background-color: #fff;
+
+  /* border: 1px solid lightgray; */
+  border: 1px solid rgb(170, 71, 71);
+  text-align: justify;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
 }
 
 .divNews:hover {
-  padding: 10px;
-  width: 100%;
   background-color: rgb(220, 224, 230);
-  border: 1px solid rgb(160, 160, 160);
-  text-align: justify;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  cursor: pointer;
-  /* -moz-box-shadow: 10px 5px 5px #ccc;
-  -webkit-box-shadow: 10px 5px 5px #ccc;
-  box-shadow: 5px 3px 3px #ccc; */
 }
-
 
 .newsTitle {
   padding: 10px;
 }
 
-
 .newsTitle h2 {
   font-size: x-large;
 }
 
-
-
 .contenedorGrid {
-  
   display: grid;
-  
-  grid-template-columns: 1.5fr 2.5fr;  
+
+  grid-template-columns: 1.5fr 2.5fr;
   /* Creamos dos columnas de igual ancho */
   grid-column-gap: 20px; /* Espacio de 20px entre columnas */
 
@@ -1482,6 +1481,10 @@ ul.breadcrumb li a:hover {
 .gridLogo img {
   width: 100%;
   height: auto;
+  /*border: 1px solid #aa4747;*/
+  border-radius: 0.3rem;
+  border: 1px solid grey;
+  box-shadow: 0px 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
 }
 
 .gridTexto {
@@ -1493,5 +1496,40 @@ ul.breadcrumb li a:hover {
   line-height: 1.6em;
 }
 
+.gridTexto .banner {
+  text-align: center;
+}
 
+.centrado {
+  text-align: center;
+}
 
+.titNews {
+  font-family: Arial, sans-serif;
+  /* font-size: 18px; */
+  color: #336699; /* Un azul suave */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  line-height: 1.5;
+  font-size: x-large;
+}
+
+.roundCorner {
+  border-radius: 10px; /* Redondea las 4 esquinas en 10 píxeles */
+}
+
+.main-carousel,
+.divNews-gray,
+.divNews {
+  margin-bottom: 40px;
+}
+
+.my-custom-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container25 ul {
+  background-color: pink;
+  padding-left: 0px;
+}
