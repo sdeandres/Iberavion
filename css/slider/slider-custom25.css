@@ -3,9 +3,10 @@ https://flickity.metafizzy.co/
 */
 
 .main-carousel {
-  /* border: 1px solid lightgray; */
-  border: 1px solid #aa4747;
-  background-color: #fff;  
+  border: 1px solid lightgray;
+  /*border: 1px solid #aa4747;*/
+  background-color: #fff;
+  margin-top: 10px;
 }
 
 .carousel-cell {

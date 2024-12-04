@@ -5,6 +5,7 @@ border: 1px solid rgb(170, 71, 71); --> AA4747 ROJO GRANATE BORDE divNews
 VERDE: #93CA47
 AZUL: #074F79
 AZUL LETRA: #126499
+GRIS FONDO  ##ededed;
 GRIS LETRA: #434343;
 GRIS BORDE: #D5D5D5
 GRIS PIE PAG:  #EDEDED
@@ -84,10 +85,10 @@ td {
 }
 body {
   line-height: 1;
-  color: #434343;
-  background: #ededed;
-  color: #000;
+  /*background: azure;*/
+  background: rgb(243, 243, 243);
 
+  color: #000;
   font: 14px sans-serif, Tahoma, Arial, Helvetica;
   margin: 0;
   min-height: 100vh;
@@ -1429,22 +1430,20 @@ ul.breadcrumb li a:hover {
   padding: 10px;
   width: 100%;
   background-color: #fff;
-  /* border: 1px solid lightgray; */
-  border: 1px solid #aa4747;
+  border: 1px solid lightgray;
+  /*border: 1px solid #aa4747;*/
   text-align: justify;
   cursor: pointer;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
 }
 
-.divNews-gray {
+.divNews-white {
   padding: 10px;
   width: 100%;
-  /* background-color:#eceaea;  */
   background-color: #fff;
-
-  /* border: 1px solid lightgray; */
-  border: 1px solid rgb(170, 71, 71);
+  border: 1px solid lightgray;
+  /*border: 1px solid #aa4747;*/
   text-align: justify;
   cursor: pointer;
   -moz-border-radius: 0.5em;
@@ -1518,7 +1517,7 @@ ul.breadcrumb li a:hover {
 }
 
 .main-carousel,
-.divNews-gray,
+.divNews-white,
 .divNews {
   margin-bottom: 40px;
 }
@@ -1530,6 +1529,6 @@ ul.breadcrumb li a:hover {
 }
 
 .container25 ul {
-  background-color: pink;
+  /*background-color: pink;*/
   padding-left: 0px;
 }

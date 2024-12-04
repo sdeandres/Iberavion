@@ -73,15 +73,16 @@ main>.container {
 .imgArt400 {
 	max-width: 350px;
 	/*ANCHO DE TU IMAGEN*/
-	border: 1px solid #900;
+	/*border: 1px solid #900;*/
+	border: 1px solid gray;
 	margin: 5px;
 }
 
 .card__img .imgArt400 {
 	max-width: 300px;
 	/*ANCHO DE TU IMAGEN*/
-	border: 1px solid #900;
-	margin: 5px;
+	/*border: 1px solid #900;*/
+	border: 1px solid gray;
 }
 
 .imgArt200 {
